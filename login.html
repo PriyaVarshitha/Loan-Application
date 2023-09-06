@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<center>
+    <h2>Login Page</h2>
+    <form id="login-form">
+        <!-- Login form content -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+	<p>If you are not registered, <a href="register.html">register here</a>.</p>
+    </form>
+</center>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Add your login logic here
+            alert("Login logic goes here.");
+        });
+    </script>
+</body>
+</html>
